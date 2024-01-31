@@ -141,6 +141,11 @@ nav .row{
     align-items: center;
 }
 
+h5{
+    font-family: 'Avenir';
+    font-weight:500;
+
+}
 .FirstSection{
     min-height: 580px;
     background-color: rgba(0, 0, 0, 0.774);
@@ -201,4 +206,64 @@ nav .row{
     /* margin: 10px; */
     margin: 5px;
 }
+.FeaturesSection{
+    margin-top: 50px;
+}
+.FeaturesContainer{
+    max-width: 100% !important;
+    padding: 0;
+    margin: 0;
 
+}
+.FeaturesSectionHeader{
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.FeatureCard{
+    margin: 5px;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    border: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+    /* border-left: 5px solid #63b9e9; */
+    
+}
+.FeatureCardRight{
+    display: flex;
+    align-items: center;
+}
+.FeatureCardHeader{
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.FeatureCardText{
+    padding: 15px;
+}
+
+
+
+
+.HowItWorksSection{
+    margin-top: 50px;
+    min-height: 600px;
+    background-color: #eee;
+    padding: 40px;
+}
+.WorksSectionHeader{
+    color: #63b9e9;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.HowItWorksList{
+    padding: 10px;
+    padding-right: 10%;
+    list-style-type: square;
+    /* font-size: 18px; */
+}
+li{
+    font-family: 'Avenir';
+}
+.HowItWorksList li h5{
+    color: #63b9e9;
+}

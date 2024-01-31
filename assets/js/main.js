@@ -11,7 +11,7 @@ if(scrollPosition < firstsec){
 
 }
 if (scrollPosition > threshold) {
-        
+        nav.style.transition = ' all .5s ease-in-out';
         nav.style.boxShadow = 'rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px';
         if(scrollPosition > firstsec){
             nav.style.backgroundColor = 'rgba(0, 0, 0, 0.774)';
