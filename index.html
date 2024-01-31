@@ -13,14 +13,21 @@
 <body>
 
 
-    <section class="FirstSection CenterFlex">
-
+    <section class="FirstSection CenterFlex" id="Home">
+        <div class="SideNav">
+            <ul class="list-unstyled">
+                <li class="list-item"><a href="#Home"> <i class="fa-solid fa-house"></i> <br> Home</a> </li>
+                <li class="list-item"><a href="#Features"> <i class="fa-solid fa-star"></i> <br> Features</a></li>
+                <li class="list-item"><a href="#HowItWorks?"> <i class="fa-solid fa-circle-question"></i> <br> How It Works?</a></li>
+                <li class="list-item"><a href="#Packeges"> <i class="fa-solid fa-money-check-dollar"></i> <br> Packeges</a></li>
+                <li class="list-item"><a href="#About"> <i class="fa-solid fa-info"></i> <br> About</a></li>
+            </ul>
+        </div>
         
         <div class="shadow"></div>
         <div class="container CenterFlex">
             <div class="row CenterFlex">
                 <nav class="col-lg-12 nav nav-bar" data-aos="fade-down">
-                    <div class="barbar"></div>
                         <div class="row">
                             <div class="col-lg-3" style="height: 100%;z-index: 50;padding-top: 4px; padding-bottom: 4px; ">
                                 <!-- <span class="LogoSpan">WebStack</span> -->
@@ -33,13 +40,17 @@
                             z-index: 162;">
                                 <ul class="list-unstyled">
                                     <li class="list-inline-item"><a href="">Home</a></li>
-                                    <li class="list-inline-item"><a href="#Services">Features</a> </li>
-                                    <li class="list-inline-item"><a href="#OurWork">How It Works?</a> </li>
-                                    <li class="list-inline-item"><a href="#Team"> Packeges</a></li>
+                                    <li class="list-inline-item"><a href="#Features">Features</a> </li>
+                                    <li class="list-inline-item"><a href="#HowItWorks?">How It Works?</a> </li>
+                                    <li class="list-inline-item"><a href="#Packeges"> Packeges</a></li>
                                     <li class="list-inline-item"><a href="#About">About</a> </li>
                                 </ul>
                             </div>
-                            
+                            <button class="toggle-btn" onclick="toggleMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
                 </nav>
 
@@ -58,11 +69,11 @@
     </section>
 
 
-    <section class="FeaturesSection">
+    <section id="Features" class="FeaturesSection">
         <h1 class="CenterFlex FeaturesSectionHeader"  data-aos="fade-up">Features</h1>
-        <div class="container CenterFlex FeaturesContainer">
+        <div class="container CenterFlex FeaturesContainer" data-aos="fade-up">
             <div class="row CenterFlex" style="width: 100%;">
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -79,7 +90,7 @@
                 </div>
 
 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -98,7 +109,7 @@
 
 
                 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard">
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -115,7 +126,7 @@
                 </div>
 
                                 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -130,7 +141,7 @@
                     </div>
                     
                 </div>
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard">
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -146,7 +157,7 @@
                     
                 </div>
 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -164,7 +175,7 @@
                 </div>
 
 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -179,7 +190,7 @@
                     
                 </div>
 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -195,7 +206,7 @@
                     
                 </div>
 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -210,7 +221,7 @@
                     
                 </div>
 
-                <div class="col-lg-3 card FeatureCard" data-aos="fade-up">
+                <div class="col-lg-3 card FeatureCard" >
                     <div class="CardContainer" style="margin: 10px;">
                         <div class="row CenterFlex">
                             <div class="col-lg-12 FeatureCardRight">
@@ -233,8 +244,8 @@
 
 
 
-    <section class="HowItWorksSection">
-        <h1 class="CenterFlex WorksSectionHeader"  data-aos="fade-up">How It Works?</h1>
+    <section id="HowItWorks?" class="HowItWorksSection">
+        <h1 class="CenterFlex WorksSectionHeader"  data-aos="fade-up">How It Works ?</h1>
 
         <div class="container">
             <div class="row">
