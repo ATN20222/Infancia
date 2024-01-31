@@ -27,8 +27,17 @@ window.onscroll = function() {
 
 var togBtn = document.querySelector(".toggle-btn");
 var sideBar = document.querySelector(".SideNav");
+togBtn.addEventListener("click" , ()=>{
+    sideBar.classList.toggle("ActiveSideBar");
+});
 
-    togBtn.addEventListener("click" , ()=>{
-        sideBar.classList.toggle("ActiveSideBar");
-        
-    });
+
+var sidebtns = document.querySelectorAll('.sidebtn');
+sidebtns.forEach(function(sidebtn) {
+    sidebtn.addEventListener('click', function() {
+    sideBar.classList.toggle('ActiveSideBar');
+
+  });
+});
+
+
