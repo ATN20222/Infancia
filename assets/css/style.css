@@ -404,3 +404,10 @@ section{
     }
 
 }
+
+/* Footer Style */
+.FooterSection{
+    margin-top: 40px;
+    min-height: 400px;
+    background-color: #ddd;
+}
