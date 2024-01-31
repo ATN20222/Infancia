@@ -3,8 +3,92 @@
     padding: 0;
     margin: 0;
 }
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/Avenir\ Regular/Avenir Regular.ttf');
+    
+  }
+
+
 body{
     height: 600vh;
+    overflow-x: hidden;
+}
+
+
+
+nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    min-height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    transition: all .5s ease-in-out;
+}
+
+
+
+nav .row{
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+}
+.LogoSpan{
+    font-family: Slant;
+    color: white;
+    font-size: 40px;
+}
+
+.RightNav{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-self: center;
+    padding-right: 30px;
+
+}
+.RightImageEdited{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    right: -366px;
+    height: 717px;
+    transform: translateX(100%);
+    opacity:0;
+    transition: all .8s ease-in-out;
+
+}
+.FadeImageAnimation{
+    transform: translateX(0) !important;
+}
+
+.RightNav ul {
+    height: 100%;
+    display: contents;
+}
+.RightNav ul li{
+    padding-left: 35px;
+}
+.RightNav ul li a{
+    transition: all .2s linear;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    /* color: #607d8b; */
+    /* color: #791A96; */
+    color: #63b9e9;
+    font-family: 'Avenir';
+    font-weight: 600;
+    
+}
+.RightNav ul li:hover a{
+    color: #f39daa;
 }
 
 .CenterFlex{
@@ -15,17 +99,62 @@ body{
 
 .FirstSection{
     min-height: 580px;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.774);
     position: relative;
-    
+ 
 }
 .FirstSection .container{
-    min-height: 580px;
+    min-height: 800px;
 }
 .shadow{
     position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.557);
-    /* filter: blur(2px); */
+    background-color: rgba(0, 0, 0, 0.888);
+    background-image: url("../images/first\ section\ background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    filter: blur(.7px);
 }
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.GoogleBtn{
+    display: block;
+    margin: 10px;
+    padding: 50px 100px 100px 50px;
+    background-image: url("../images/512x512.png");
+    background-size: cover;
+    /* padding: 200px; */
+}
+
+.AppStoreBtn{
+    display: block;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/pngwing.com\ \(36\).png");
+    background-size: cover;
+}
+.btnCotainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bn46 {
+    width: 150px;
+    height: 50px;
+    /* margin: 10px; */
+    margin: 5px;
+}
+.bn45 {
+    width: 150px;
+    height: 50px;
+    /* margin: 10px; */
+    margin: 5px;
+}
+
