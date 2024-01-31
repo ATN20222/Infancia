@@ -17,6 +17,50 @@ body{
 }
 
 
+::-webkit-scrollbar {
+    width:7px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    background-color: #af969a;
+}
+
+
+::-moz-scrollbar {
+    width:7px;
+    background-color: #af969a;
+}
+
+::-moz-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-moz-scrollbar-thumb {
+    /* border-radius: 10px; */
+    background-color: #af969a;
+}
+
+::-ms-scrollbar {
+    width:7px;
+    background-color: white;
+}
+
+::-ms-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-ms-scrollbar-thumb {
+    /* border-radius: 10px; */
+    background-color: #af969a;
+}
+
+
 
 nav{
     position: fixed;
