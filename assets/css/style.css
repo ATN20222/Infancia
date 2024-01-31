@@ -17,7 +17,7 @@
   }
 
 body{
-    height: 600vh;
+    min-height: 600vh;
     overflow-x: hidden;
 }
 
