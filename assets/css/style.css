@@ -25,7 +25,7 @@ h1{
     font-family: 'Josefin';
 }
 ::-webkit-scrollbar {
-    width:7px;
+    width:0px;
     background-color: #ffffff;
 }
 
@@ -371,11 +371,39 @@ section{
     
 }
 
+.ContactUsSection{
+    min-height: 600px;
+    padding: 40px;
+    padding-top: 100px;
+}
+.ContactInfo{
+    flex-direction: column;
+}
+
+.ContactItem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    margin-top: 10px;
+}
 
 
 
+.SubmitBtn{
+    transition: all .2s ease-in-out;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4f98c0;
+    color: white;
+}
 
-
+.SubmitBtn:hover{
+    background-color: #705b5e;
+    color: white;
+}
 
 
 
