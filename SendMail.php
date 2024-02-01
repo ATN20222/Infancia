@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-    $to = "info@mindholding.net";
+    $to = "aaballa@mindholding.net";
     $headers = "From: $name <$email>\r\n";  
     $email_message = "Subject: $subject\n\nMessage:\n$message";
     $result =mail($to, $subject, $email_message, $headers);
