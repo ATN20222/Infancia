@@ -465,6 +465,11 @@ footer{
 .FooterListItem{
     padding-top: 10px;
 }
+
+::selection {
+    background-color: #f39daa; 
+}
+
 /* responsive */
 
 @media (max-width:990px) {
