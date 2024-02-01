@@ -301,6 +301,8 @@ h5{
 .FeaturesSection{
     margin-top: 50px;
     overflow-y: hidden;
+    margin-bottom: 40px;
+
 }
 .FeaturesContainer{
     max-width: 100% !important;
@@ -382,7 +384,6 @@ footer{
     z-index: 2;
 }
 .FooterSection{
-    margin-top: 40px;
     min-height: 400px;
     background-color: rgba(0, 0, 0, 0.774);
     /* background-color: #eee; */
