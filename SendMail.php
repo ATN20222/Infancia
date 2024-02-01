@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_message = "Subject: $subject\n\nMessage:\n$message";
     $result =mail($to, $subject, $email_message, $headers);
 
-    if ($result) {
+    if ($result) {  
         header("Location: index.html");
         exit();
     } else {
