@@ -298,6 +298,8 @@ h5{
     /* margin: 10px; */
     margin: 5px;
 }
+
+/* Features */
 .FeaturesSection{
     margin-top: 50px;
     overflow-y: hidden;
@@ -338,7 +340,7 @@ h5{
 
 
 
-
+/* How it works */
 .HowItWorksSection{
     min-height: 600px;
     background-color: #eee;
@@ -371,6 +373,7 @@ section{
     
 }
 
+/* Contact */
 .ContactUsSection{
     min-height: 600px;
     padding: 40px;
@@ -405,6 +408,56 @@ section{
     color: white;
 }
 
+/* packeges */
+.PackegesSection{
+    min-height: 800px;
+    margin-top: 100px;
+}
+.PackegeCard{
+    padding: 20px;
+    border-radius: 0px;
+    min-height: 400px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    color: white;
+}
+.PlanTitle{
+    font-weight: 800;
+}
+
+.FirstPackegeCard{
+    background-color: #63b9e9;
+}
+.SecondPackegeCard{
+    background-color: #4f98c0;
+}
+
+.PackegeCardTop{
+    flex-direction: column;
+}
+.featuresList li::before{
+        content: "\2713"; 
+        color: green; 
+        margin-right: 5px;
+}
+
+.PackegeCardHr{
+    background-color: #ffffff;
+    height: 3px !important;
+    width: 80%;
+}
+.GetPackegeBtn {
+    border: 2px solid #f39daa;
+    color: white;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+    background-color:transparent ;
+}
+
+.GetPackegeBtn:hover {
+    color: white;
+    background-color: #f39daa;
+}
 
 
 /* Footer Style */
