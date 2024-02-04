@@ -408,6 +408,11 @@ section{
     color: white;
 }
 
+iframe{
+    width: 100%;
+}
+
+
 /* packeges */
 .PackegesSection{
     min-height: 800px;
