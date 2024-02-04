@@ -567,6 +567,12 @@ footer{
 .FooterListItem{
     padding-top: 10px;
 }
+.FooterLogo{
+    height: 100%;
+    z-index: 50;
+    padding-top: 50px; 
+    padding-bottom: 4px; 
+}
 
 ::selection {
     background-color: #63b9e9; 
@@ -601,12 +607,19 @@ footer{
         max-width: 320px;
     }
 
-
+    .FooterLogo{
+        padding-top: 20px;
+    }
     .FooterDescription{
         font-size: 15px;
+        padding-left: 10px;
+    }
+    .LinksCol{
+        padding-left: 20px;
     }
     .FooterContact{
         justify-content: flex-start;
+        padding-left: 20px;
 
     }
 
