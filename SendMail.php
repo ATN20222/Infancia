@@ -41,8 +41,8 @@ try {
 
     $mail->send();
     // echo 'Message has been sent';
-    echo '<script>alert("Message has been sent")</script>';
+    echo '<script>alert("Message has been sent"); window.location.href = "index.html";</script>';
 
 } catch (Exception $e) {
-    echo '<script>alert("Message could not be sent");</script>';
+    echo '<script>alert("Message could not be sent");window.location.href = "index.html";</script>';
 }
