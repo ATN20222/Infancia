@@ -41,8 +41,8 @@ try {
 
     $mail->send();
     // echo 'Message has been sent';
-    header('Location: ' . 'sent.html');
+    echo '<script>alert("Message has been sent")</script>';
 
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo '<script>alert("Message could not be sent");</script>';
 }
