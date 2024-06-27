@@ -15,6 +15,9 @@
     src: url('../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
     
   }
+  .Logos{
+    text-decoration: none;
+  }
 
 body{
     min-height: max-content;
@@ -577,9 +580,48 @@ footer{
 ::selection {
     background-color: #63b9e9; 
 }
+.CreateAccount{
+    margin-top: 20px;
+}
+.CreateAccount a{
+    transition: all .2s linear;
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: white;
+    /* color: #607d8b; */
+    /* color: #791A96; */
+    color: #63b9e9;
+    font-family: 'Avenir';
+    font-weight: 400;
+}
+.CreateAccount:hover{
+    color: #af969a;
 
+}
+
+.Btn-Register{
+    background-color: #63b9e9;
+    color:white !important;
+}
+.Btn-Register:hover{
+    background-color: transparent;
+    color:#f39daa !important;
+}
+.Btn-Login{
+    background-color: #f39daa;
+    color:white !important;
+}
+.Btn-Login:hover{
+    background-color: transparent;
+    color:#f39daa !important;
+}
 /* responsive */
-
+@media (max-width:1085px) {
+    .RightNav ul li {
+        padding-left: 20px !important;
+    }
+}
 @media (max-width:990px) {
     .ServicesCard{
         max-width: 500px;
