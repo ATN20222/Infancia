@@ -15,14 +15,15 @@
     src: url('../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf');
     
   }
-  .Logos{
-    text-decoration: none;
-  }
 
 body{
     min-height: max-content;
     overflow-x: hidden;
 }
+.Logos{
+    text-decoration: none !important;
+}
+
 
 h1{
     font-family: 'Josefin';

@@ -4,18 +4,12 @@
 $name = $_POST["name"];
 $email = $_POST["email"];
 $NurserySize = $_POST["NurserySize"];
-$subject = $_POST["subject"];
+$subject = 'Request from Website';
 $message = $_POST["message"];
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-require './PHPMailer/src/Exception.php';
-require './PHPMailer/src/PHPMailer.php';
-require './PHPMailer/src/SMTP.php';
+require 'PHPMailer/PHPMailerAutoload.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -23,12 +17,13 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->isSMTP();                                            
-    $mail->Host       = 'smtp-mail.outlook.com';                    
+    $mail->Host       = 'mail.infancia.app';
+    // $mail->Host       = 'smtp.office365.com';
     $mail->SMTPAuth   = true;                            
     $mail->Username   = 'info@infancia.app';                    
     $mail->Password   = 'Mind12345@';                              
     $mail->SMTPSecure = 'tls';            
-    $mail->Port       = 587;                                    
+    $mail->Port       = 25;                                    
 
     //Recipients
     $mail->setFrom('info@infancia.app', $name);
@@ -41,8 +36,8 @@ try {
 
     $mail->send();
     // echo 'Message has been sent';
-    echo '<script>alert("Message has been sent"); window.location.href = "index.html";</script>';
+    echo '<script>alert("Message has been sent");window.location.href = "ContactUs.html";</script>';
 
 } catch (Exception $e) {
-    echo '<script>alert("Message could not be sent");window.location.href = "index.html";</script>';
+    echo '<script>alert("Message could not be sent");window.location.href = "ContactUs.html";</script>';
 }
