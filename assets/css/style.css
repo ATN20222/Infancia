@@ -77,12 +77,15 @@ nav{
     position: fixed;
     z-index: 1000;
     top: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(18, 15, 15, 0);
+    background-color: white !important;
     min-height:50px;
     display: flex;
     justify-content: center;
     align-items: center ;
     transition: all .5s ease-in-out;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 
@@ -105,7 +108,8 @@ nav .row{
     align-items: center;
     align-self: center;
     padding-right: 30px;
-
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .RightImageEdited{
     position: absolute;
@@ -128,7 +132,7 @@ nav .row{
     display: contents;
 }
 .RightNav ul li{
-    padding-left: 35px;
+    padding-left: 30px;
 }
 .RightNav ul li a{
     transition: all .2s linear;
@@ -244,12 +248,12 @@ h5{
 }
 .FirstSection{
     min-height: 580px;
-    background-color: rgba(0, 0, 0, 0.774);
+    /* background-color: rgba(0, 0, 0, 0.774); */
     position: relative;
  
 }
 .FirstSection .container{
-    min-height: 800px;
+    min-height: 700px;
 }
 .shadow{
     position: absolute;
@@ -320,29 +324,59 @@ h5{
     padding: 10px;
     margin-bottom: 50px;
 }
-.FeatureCard{
-    margin: 5px;
+.FeatureCard {
+    margin: 10px;
     padding: 20px;
     max-width: 400px;
+    min-height: 250px;
     position: relative;
     border: none;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
-    /* border-left: 5px solid #63b9e9; */
-    
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 
+                0 0 2px rgba(0, 0, 0, 0.06), 
+                0 4px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 25px;
+    border: 1px solid #009FE3;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
 }
-.FeatureCardRight{
-    display: flex;
-    align-items: center;
+
+/* Hover effect */
+.FeatureCard:hover {
+    background-color: #009FE3;
+    color: white;
 }
-.FeatureCardHeader{
+
+.FeatureCardHeader {
     padding-left: 25px;
     padding-top: 5px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #009FE3;
+    transition: color 0.3s ease;
 }
-.FeatureCardText{
+
+.FeatureCardText {
     padding: 15px;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
+/* Change text color to white on hover */
+.FeatureCard:hover .FeatureCardHeader, 
+.FeatureCard:hover .FeatureCardText {
+    color: white;
+}
 
+.FeatureCardRight {
+    display: flex;
+    align-items: center;    
+}
+.FeatureCardRight img{
+    background-color: white;
+    border-radius: 50%;
+}
 
 /* How it works */
 .HowItWorksSection{
@@ -519,10 +553,10 @@ footer{
 }
 .FooterSection{
     min-height: 400px;
-    background-color: rgba(0, 0, 0, 0.774);
+    background-color:#062231;
     /* background-color: #eee; */
     font-family: 'Josefin';
-    color: #63b9e9;
+    color: white !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -537,7 +571,7 @@ footer{
     z-index: 1;
     background-image: url('../images/Pattern_5.png');
     background-size: cover;
-    opacity: .05;
+    opacity: .02;
 }
 
 .copyRights{
@@ -562,7 +596,7 @@ footer{
     text-decoration: none;
     font-family: 'Avenir';
     font-size: 18px;
-    color: #63b9e9;
+    color: white !important;
     transition: all .2s ease-in-out;
 }
 .FooterLink:hover{
@@ -602,22 +636,55 @@ footer{
 }
 
 .Btn-Register{
-    background-color: #63b9e9;
-    color:white !important;
+    /* background-color: #f39daa; */
+    border: 1px solid #f39daa ;
+    color:#f39daa !important;
+    width: 85px;
+    border-radius: 10px;
+    text-align: center;
+
 }
 .Btn-Register:hover{
-    background-color: transparent;
-    color:#f39daa !important;
-}
-.Btn-Login{
     background-color: #f39daa;
     color:white !important;
 }
+
+
+
+
+.Btn-Login{
+    background-color: #63b9e9;
+    width: 85px;
+    text-align: center;
+    border-radius: 10px;
+    color:white !important;
+    border: 1px solid #63b9e9 ;
+
+
+}
 .Btn-Login:hover{
     background-color: transparent;
-    color:#f39daa !important;
+    color:#63b9e9 !important;
 }
 /* responsive */
+@media (max-width:1285px) {
+    .FeatureCard{
+        min-height: 300px !important;
+    }
+}
+@media (max-width:1200px) {
+    .FeatureCard{
+        min-height: 280px !important;
+    }
+    .FeatureCardHeader{
+        font-size: 20px;
+    }
+    .FeatureCardText{
+        padding:auto;
+        font-size: 17px !important;
+    }
+    
+}
 @media (max-width:1085px) {
     .RightNav ul li {
         padding-left: 20px !important;
@@ -633,23 +700,18 @@ footer{
     .RightNav{
         display: none;
     }
-
-
     .toggle-btn{
         display: flex;
     }
-
     nav .row{
         padding-left:10px ;
     }
     .LinksCol{
         justify-content: flex-start;
     }
-
     .PackegeCard{
         max-width: 320px;
     }
-
     .FooterLogo{
         padding-top: 20px;
     }
@@ -665,6 +727,273 @@ footer{
         padding-left: 20px;
 
     }
+    .FeatureCard{
+        min-height: 200px !important;
+    }
+
+
+
 
 }
 
+@media (max-width:768px) {
+    .HomeFirstSectionLeft{
+        order: 11;
+    }
+    .HomeFirstSectionRight{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .HandSection{
+        margin-top: 150px;
+    }
+
+    .GetInPhone{
+        display: flex;
+        justify-content: center;
+    }
+    .WhyUsTextCol{
+        padding: 10px !important;
+    }
+    .FeatureCard{
+        width: 90%;
+        min-height: auto !important;
+    }
+    .FeatureCardHeader{
+        font-size: 20px;
+    }
+    .FeatureCardText{
+        font-size: 17px !important;
+    }
+
+}
+@media (max-width:575px) {
+    .HandSection .container{
+        border-radius: 0 !important;
+    }
+    .AppIdentityTextCol h1{
+        font-size: 30px !important;
+    }
+}
+@media (max-width:468px) {
+    .GetInPhone{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .GetInPhone span{
+        width:80% !important;
+    }
+    .HandSectionContainer{
+        border-radius: 10px;
+    }
+}
+
+
+
+/* New Updates */
+
+.FirstHomeSectionTitle{
+    font-size: 40px;
+    font-weight: 700;
+    color: #63b9e9;
+    
+}
+.HomeFirstSectionLeft{
+    display: flex;
+    flex-direction: column;
+    
+}
+.FirstHomeSectionText{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+.FirstSectionTopIcons{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+.FirstSectionBottomIcons{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.SectionIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.SectionIcon2{
+    margin-bottom: 80px;
+}
+.SectionIcon3{
+    margin-top: 50px;
+}
+.SectionIcon5{
+    margin-top: 40px;
+}
+
+.HandSection{
+    overflow: hidden;
+    padding-top: 100px;
+}
+.HandSection .HandSectionContainer{
+    background-color: #009FE3;
+    border-radius: 50px;
+    overflow: visible;
+}
+.HandHoldPhoneCol{
+    padding-left: 40px;
+}
+.HandHoldPhoneCol img{
+    max-width: 300px;
+    scale: 1.2;
+    position: relative;
+    bottom: 45px;
+}
+.HandHoldPhoneText{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 30px;
+    overflow: hidden !important;
+}
+.HandHoldPhoneText h1{
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.Days30InPhoneHold{
+    color: black;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.GetInPhone{
+    display: flex;
+}
+.GetInPhone span{
+    padding: 10px;
+    width: 40%;
+}
+.GetInPhone span img{
+    width: 100%;
+}
+.WhyUsSection{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.WhyUsTextCol{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.WhyUsText{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.WhyUsText .WhyUs{
+    color: #009FE3;
+    font-weight: 700;
+}
+.WhyCard{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #009FE3;
+    border-radius: 30px;
+    height: 130px;
+}
+.LeftCardNumber{
+    padding: 10px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ABDCF4;
+}
+.RightCardText{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.AppSection{
+    overflow: hidden !important;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.AppSection img{
+    scale: 1 !important;
+}
+.AppIdentityTextCol{
+    margin-top: 50px  !important;
+    margin-bottom: 50px !important;
+}
+.AppIdentityTextCol h1{
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.AppIdentityTextCol .GetCustomSpan{
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+.FooterSocialLinks{
+    display: flex;
+    justify-content: start;
+}
+.FooterSocialLinks a{
+    color: white;
+    padding: 10px;
+}
+.FooterSocialLinks a svg{
+    width: 25px;
+    height:25px;
+}
+.FooterContact{
+    /* margin-top: 50px; */
+}
+.NewHowSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.HowItWorksForItem{
+    color: #009FE3;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 2px solid #009FE3;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 250px;
+    text-align: center;
+}
+.HowItWorksForCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.SquareVideo{
+    margin-top: 20px;
+    background-color: #D0D0D0;
+    min-height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url('../images/Pattern_5.png');
+    background-size: cover;
+}
+.SquareVideo svg{
+    width: 50px;
+    height:50px;
+}
